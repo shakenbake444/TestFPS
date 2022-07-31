@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     {
         motor = GetComponent<PlayerMotor>();
     }
-
+    // here are some changes to test branch
     void Update ()
     {
         // calculate movement velocity as a 3D vector
