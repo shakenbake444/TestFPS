@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1239,7 +1239,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42626
+  m_Name: pb_Mesh25524
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2136,6 +2136,7 @@ GameObject:
   - component: {fileID: 1381004384}
   - component: {fileID: 1381004383}
   - component: {fileID: 1381004382}
+  - component: {fileID: 1381004387}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -2463,6 +2464,19 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!65 &1381004387
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381004380}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 0.25, z: 20}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!43 &1462983979
 Mesh:
   m_ObjectHideFlags: 0
