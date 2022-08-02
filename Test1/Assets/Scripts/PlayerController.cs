@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     
     //[SerializeField]
     //private JointDriveMode mode;
+    //private float _yRot =       0f;
+    // comment this out when switch
 
     [SerializeField]
     private float jointspring = 20f;
@@ -43,7 +45,6 @@ public class PlayerController : MonoBehaviour
 
         Vector3 _moveHorz = transform.right     * _xMove;
         Vector3 _moveVert = transform.forward   * _zMove;
-        
 
         // final movement vector
         Vector3 _velocity = (_moveHorz + _moveVert).normalized * speed;
@@ -63,10 +64,11 @@ public class PlayerController : MonoBehaviour
         // calculate camera rotation
         float _yRot = Input.GetAxisRaw("Mouse Y");
         
-        Vector3 _camRotation = new Vector3 (_yRot, 0f, 0f) * mousespeed;
+        float _camerarotation = _yRot * mousespeed;
+        //Vector3 _camRotation = new Vector3 (_yRot, 0f, 0f) * mousespeed;
         
         // rotate camera
-        motor.RotateCamera(_camRotation);
+        motor.RotateCamera(_camerarotation);
 
         // calculate thrust force
         Vector3 _thrusterForce = Vector3.zero;
